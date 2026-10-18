@@ -1,0 +1,43 @@
+{
+  "downloaded_at": "2026-10-18T16:35:02.934778+08:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=30.201&longitude=120.103&start_date=2015-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cet0_fao_evapotranspiration%2Cshortwave_radiation_sum%2Cwind_speed_10m_max&timezone=Asia%2FShanghai&models=era5",
+  "provider": "Open-Meteo Historical Weather API",
+  "model": "ERA5",
+  "requested_point": {
+    "latitude": 30.201,
+    "longitude": 120.103,
+    "role": "approximate Meijiawu representative point"
+  },
+  "returned_grid": {
+    "latitude": 30.25,
+    "longitude": 120.0,
+    "elevation": 140.0,
+    "timezone": "Asia/Shanghai",
+    "utc_offset_seconds": 28800
+  },
+  "data_kind": "PUBLIC_REANALYSIS_GRID_NOT_FIELD_SENSOR",
+  "units": {
+    "time": "iso8601",
+    "temperature_2m_max": "°C",
+    "temperature_2m_min": "°C",
+    "precipitation_sum": "mm",
+    "et0_fao_evapotranspiration": "mm",
+    "shortwave_radiation_sum": "MJ/m²",
+    "wind_speed_10m_max": "km/h"
+  },
+  "start": "2015-01-01",
+  "end": "2025-12-31",
+  "rows": 4018,
+  "raw_sha256": "b2c774efee177879cd8133de9eb2575ef8530561ddbeb0ad5b89d866c40e2fd6",
+  "csv_sha256": "47a8bc71d1301c972520c170ccbd9fbc932c07b035578a5207e8ffac6b25f38e",
+  "license": "CC BY 4.0; Weather data by Open-Meteo.com, ERA5 by Copernicus/ECMWF",
+  "license_url": "https://open-meteo.com/en/licence",
+  "commercial_note": "Free API access used here for noncommercial research/demo; deployment must review provider terms",
+  "dependencies_available": {
+    "numpy": true,
+    "sklearn": true,
+    "pytest": false,
+    "PIL": true,
+    "playwright": false
+  }
+}

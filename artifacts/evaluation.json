@@ -1,0 +1,158 @@
+{
+  "evaluation_kind": "PUBLIC_REANALYSIS_RETROSPECTIVE_NOT_OPERATIONAL_FORECAST",
+  "split_counts": {
+    "train": 2537,
+    "validation": 723,
+    "calibration": 359,
+    "test": 358,
+    "purged": 21
+  },
+  "protocol": "train2015-2021; select on2022-2023 MAE; refit through2023; residual calibration2024; untouched2025 test; all7-day labels purged at split boundaries",
+  "feature_count": 84,
+  "validation_mae": {
+    "persistence": [
+      3.5513139695712295,
+      29.34293222683262
+    ],
+    "seasonal": [
+      3.598882542329099,
+      26.465294621401817
+    ],
+    "ridge_1": [
+      2.7332661520386616,
+      25.722479637054132
+    ],
+    "ridge_10": [
+      2.7386603101877345,
+      25.620003232940277
+    ],
+    "ridge_100": [
+      2.800741603205284,
+      25.254256763067094
+    ],
+    "ridge_1000": [
+      2.968088264409831,
+      24.44758390571694
+    ]
+  },
+  "selected_by_target": {
+    "heat_3d": "ridge_1",
+    "balance_7d": "ridge_1000"
+  },
+  "interval": {
+    "method": "2024 absolute-residual finite-sample 90% quantile; temporal dependence means no exchangeability coverage guarantee",
+    "radius": {
+      "heat_3d": 5.436343832041764,
+      "balance_7d": 62.219797901494495
+    },
+    "test_coverage": {
+      "heat_3d": 0.88268156424581,
+      "balance_7d": 0.9636871508379888
+    }
+  },
+  "test_metrics": {
+    "heat_3d": {
+      "selected": {
+        "mae": 2.847924781485199,
+        "rmse": 3.5610496830812073,
+        "rows": 358,
+        "threshold": 35.0,
+        "events": 65,
+        "true_positive": 35,
+        "false_positive": 5,
+        "false_negative": 30,
+        "precision": 0.875,
+        "recall": 0.5384615384615384
+      },
+      "persistence": {
+        "mae": 3.6997206703910615,
+        "rmse": 4.681447395909773,
+        "rows": 358,
+        "threshold": 35.0,
+        "events": 65,
+        "true_positive": 41,
+        "false_positive": 7,
+        "false_negative": 24,
+        "precision": 0.8541666666666666,
+        "recall": 0.6307692307692307
+      },
+      "seasonal": {
+        "mae": 3.833883461676182,
+        "rmse": 4.698713060085981,
+        "rows": 358,
+        "threshold": 35.0,
+        "events": 65,
+        "true_positive": 14,
+        "false_positive": 12,
+        "false_negative": 51,
+        "precision": 0.5384615384615384,
+        "recall": 0.2153846153846154
+      }
+    },
+    "balance_7d": {
+      "selected": {
+        "mae": 21.924755408997395,
+        "rmse": 28.169995969710538,
+        "rows": 358,
+        "threshold": 15.0,
+        "events": 96,
+        "true_positive": 0,
+        "false_positive": 3,
+        "false_negative": 96,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "persistence": {
+        "mae": 25.835195530726256,
+        "rmse": 36.208012863601425,
+        "rows": 358,
+        "threshold": 15.0,
+        "events": 96,
+        "true_positive": 21,
+        "false_positive": 75,
+        "false_negative": 75,
+        "precision": 0.21875,
+        "recall": 0.21875
+      },
+      "seasonal": {
+        "mae": 21.7429264288903,
+        "rmse": 28.188225002424577,
+        "rows": 358,
+        "threshold": 15.0,
+        "events": 96,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 96,
+        "precision": null,
+        "recall": 0.0
+      }
+    }
+  },
+  "test_origin_range": [
+    "2025-01-01",
+    "2025-12-24"
+  ],
+  "model_freeze_before_test": "2023-12-31 fitted parameters; 2024 residual calibration only",
+  "screening_policy": {
+    "rule": "heat point estimate + fixed2024 residual radius >= user threshold; triggers verification, not automated operation",
+    "heat_35C_test": {
+      "mae": 4.475183585205568,
+      "rmse": 5.3781748574985375,
+      "rows": 358,
+      "threshold": 35.0,
+      "events": 65,
+      "true_positive": 64,
+      "false_positive": 73,
+      "false_negative": 1,
+      "precision": 0.46715328467153283,
+      "recall": 0.9846153846153847
+    }
+  },
+  "product_admission": {
+    "heat_3d": "RETROSPECTIVE_SCREENING_WITH_INTERVAL_AND_MANUAL_REVIEW",
+    "balance_7d": "EXPLORATORY_ONLY_NOT_USED_FOR_ACTIONS",
+    "balance_reason": "2025 held-out threshold recall is zero and MAE does not beat seasonal baseline; retain failure, do not retune against test",
+    "recent_balance": "Observed public reanalysis ET0-minus-rain summary used only to request field verification"
+  },
+  "weather_csv_sha256": "47a8bc71d1301c972520c170ccbd9fbc932c07b035578a5207e8ffac6b25f38e"
+}

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+private_applications/
+*private*.json
+artifacts/browser_downloads/

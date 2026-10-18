@@ -1,0 +1,2 @@
+# Already available locally. No installation performed in this build.
+numpy>=1.26

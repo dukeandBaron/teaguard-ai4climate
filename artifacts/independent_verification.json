@@ -1,0 +1,7 @@
+{
+  "status": "PASS_INDEPENDENT_LOCAL_METRIC_AND_LABEL_RECOMPUTATION",
+  "test_windows": 358,
+  "assertions": 1087,
+  "weather_csv_sha256": "47a8bc71d1301c972520c170ccbd9fbc932c07b035578a5207e8ffac6b25f38e",
+  "scope": "public reanalysis retrospective only; not an official score or agronomic outcome"
+}
