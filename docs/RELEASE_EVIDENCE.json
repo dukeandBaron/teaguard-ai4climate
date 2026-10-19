@@ -18,9 +18,10 @@
   },
   "statement": {
     "file": "TeaGuard_Project_Statement_V3_1.pdf",
-    "sha256": "342f911c3b1cb838e3937a2ee896abf8abffd19dc8f5b8573a16fc7e2e7d037e",
+    "sha256": "217b69ef82a166b3fe8cc4d3846a05330380f419df498ebaa82129ed3b6e4093",
     "bytes": 362613,
-    "pages": 4
+    "pages": 4,
+    "searchable_ET0": true
   },
   "new_model_training": false,
   "field_effectiveness_verified": false,

@@ -120,7 +120,7 @@
     "app/requirements-dev.txt": "66f9e34eae9e251890c5f769546d0032bf032cc70517fb302e8812dd0e9e217a",
     "app/start_teaguard_nature.cmd": "7d9108abe0eacfb8ff84a6d1acf148e3b6e36e2fd5be81eedd3862bc13565731",
     "docs/TeaGuard_Demo_V3_1.mp4": "21b072cd7bc869cdd046ac99ab3de774afde20794075e6319ddbce3a1a2a58dc",
-    "docs/TeaGuard_Project_Statement_V3_1.pdf": "342f911c3b1cb838e3937a2ee896abf8abffd19dc8f5b8573a16fc7e2e7d037e",
+    "docs/TeaGuard_Project_Statement_V3_1.pdf": "217b69ef82a166b3fe8cc4d3846a05330380f419df498ebaa82129ed3b6e4093",
     "app/artifacts/BASELINE_CONTEXT_GAP.json": "1f5e75d9f4f1daae9442dfb9540afd7b2a9f799b990729a71eac85f785e0853f",
     "app/artifacts/BROWSER_ACCEPTANCE.json": "4456f07d5951d9e618984fe1e40794d40155a937c55345fc9d896dcbe53f2887",
     "app/artifacts/ENGINEERING_ACCEPTANCE.json": "e47281c18ae31f6bb897e5e8749344866824c288e3fceb14b843fe725f1237c1",
@@ -206,7 +206,7 @@
     "app/data/neighborhood/PROVENANCE.json": "0afc41f61977f0dff99404aa8c53f38dade7f5829fdcb6608abbcf20e0955504",
     "app/data/neighborhood/weather_neighborhood.csv": "9948befee7fff00688b969b57573e79bc7be3049720b91a561b9b26f86981a67",
     "app/artifacts/PORTABLE_ACCEPTANCE.json": "ea14e98daf65e7987ddd0c5af7abda031759096e1c7e90a130cbc391ca66bd7e",
-    "docs/RELEASE_EVIDENCE.json": "ab771bbbfc75b69ca79b95de5f8b128232115cc91bb9b82abf53012aa0db6a50"
+    "docs/RELEASE_EVIDENCE.json": "a8edf853843a71f4bb793f8b2a3c50aeed2bec49302f8717857e25d2642799be"
   },
   "public_runtime_python_tests": 48,
   "manifest_self_excluded": true
