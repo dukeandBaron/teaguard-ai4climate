@@ -1,0 +1,97 @@
+{
+  "created_utc": "2026-10-19T02:35:06.854959+00:00",
+  "new_root": "E:/codex_competitions/worktrees/11_competition_implementation_hub/13_product_workspaces/ai4climate_tea_guard_v3_engineering_20261019",
+  "frozen_v1_root": "E:\\codex_competitions\\worktrees\\11_competition_implementation_hub\\13_product_workspaces\\ai4climate_tea_guard",
+  "frozen_v1_expected": {
+    "BUILD_CONTRACT.json": "03116b812c493906ef096f5d390195970b626d272970b2984d3527917662dd89",
+    "docs/DEMO_SCRIPT_3MIN.md": "3a9140dc575d248d8ddda265c7f3c525e8a794772737683cf7f0866781a676ed",
+    "docs/FORM_TEXT.md": "c8efadd37b9cb778c6f05d8861ae23c0e8bb2c966ec13e02ee022838758ddac3",
+    "docs/PROJECT_DESCRIPTION.md": "5dd3a41cb76e4d10dab727fae215aff814a4e6c957b5e7c8a5128c16465f4073",
+    "README.md": "a4c2e0668a09f7b2f9345ed9d1d4eeaa6203cf8e692118537be1d6eab7b2aa5a",
+    "requirements.txt": "5605f7dbbfad802622b9948fc9739308dc801a35214e002f5b7ea99996c28a69",
+    "scripts/acceptance.py": "8e3561164e75683318c9f58a08ca43bc0104f04b765924426b86834202b3dcd7",
+    "scripts/fetch_weather.py": "90efd956fc56dbd6038dfe17fe2c0f359b9159f5b99b6ca391acba38c9bd8b74",
+    "scripts/independent_verify.py": "faa9f5ec692d770e46dcf69b728f7ba64ced365733ce55dc5386de29fbc92dd0",
+    "server.py": "cdb05e4ac8803673f4ce643bb480727f341ef0164e783d94e6e98cf9fcfbb2ef",
+    "start_teaguard.cmd": "6079aac779133aaf2357118127c542c4e8f5aa1261aa371566593d54dd8e6295",
+    "teaguard/__init__.py": "f7b881116810e897985a31a53c82e49cb267a8ff5868e5eec1c9cd37f2bf53c6",
+    "teaguard/model.py": "63da33b4c6f0e0525732c3afa30630a3d965c06e3f8ca07de46fa34f046c1fac",
+    "teaguard/service.py": "4a7bf1d8a19d49e1d06c7350d9f75840743f54463c5b7a8e3271f7bd08dd2c8b",
+    "tests/test_teaguard.py": "7d41d69c6352f9d80dc24f24ed59decda43e5426d1133d6c983270154ba5229a",
+    "web/app.js": "d0a05477a8da7fdd6b0d3250de60d72885faab6d47c5f8ad027402123f6e4bc5",
+    "web/favicon.svg": "a3b73395b4307e33c79cb37b4c5491c9ca265c7d88b6ac123e169afa777b1ae3",
+    "web/index.html": "8afebdd301d5133c987cd342a85ba495436938af427eebc3d386908e7bf03469",
+    "web/style.css": "b0ceb1a2190a104171e8b6a7eff907bf8aaa4b41670e75cf08cb96a593af6d78",
+    "artifacts/MATERIALS_SOURCE_MANIFEST.json": "472bda7b307cf55468e34e9ef93eeaa9b79e1f43405767d87f3a349d420718e3",
+    "artifacts/evaluation.json": "4cffa13f3fb0a1e11dbf635de0d9b7c985db69e8bddce172b0a4996b4d3f9f8b",
+    "artifacts/test_predictions.json": "4c880417acc469f68aac6b0eed3fb07e8a64473ad9508723b58887de52a42ee2",
+    "data/PROVENANCE.json": "1260ef1172acafd144eb4e3988dc2aa173e0d15262a613a2e1683f043dad1640",
+    "data/weather_daily.csv": "47a8bc71d1301c972520c170ccbd9fbc932c07b035578a5207e8ffac6b25f38e",
+    "data/raw/meijiawu_era5_2015_2025.json": "b2c774efee177879cd8133de9eb2575ef8530561ddbeb0ad5b89d866c40e2fd6"
+  },
+  "copied_source_records": [
+    {
+      "source": "E:\\codex_competitions\\worktrees\\11_competition_implementation_hub\\13_product_workspaces\\ai4climate_tea_guard_candidate_a0_20261018\\teaguard\\decision_kernel.py",
+      "path": "teaguard\\decision_kernel.py",
+      "sha256": "e96fa147408aaa8d95e1186e383ce82937c3508be5bc30b60780ed56a658ce89"
+    },
+    {
+      "source": "E:\\codex_competitions\\worktrees\\11_competition_implementation_hub\\13_product_workspaces\\ai4climate_tea_guard_candidate_a0_20261018\\teaguard\\forecast_contract.py",
+      "path": "teaguard\\forecast_contract.py",
+      "sha256": "c655b4119bea0f78cb51a944ed881fd66ae87b30cbdd23bfdc435f4d14769807"
+    },
+    {
+      "source": "E:\\codex_competitions\\worktrees\\11_competition_implementation_hub\\13_product_workspaces\\ai4climate_tea_guard_candidate_a0_20261018\\teaguard\\__init__.py",
+      "path": "teaguard\\__init__.py",
+      "sha256": "257c67d79f47445a6bd7bf15ac45c9ac0cfec7d1da4d3b9886f990e711c3354e"
+    },
+    {
+      "source": "E:\\codex_competitions\\worktrees\\11_competition_implementation_hub\\13_product_workspaces\\ai4climate_tea_guard_candidate_a0_20261018\\tests\\cases.py",
+      "path": "tests\\cases.py",
+      "sha256": "7944cb9e762360ad335b4876fa9bac7c53cb921bea2011bdffe29fabdba6f87b"
+    },
+    {
+      "source": "E:\\codex_competitions\\worktrees\\11_competition_implementation_hub\\13_product_workspaces\\ai4climate_tea_guard_candidate_a0_20261018\\tests\\test_audit_cli.py",
+      "path": "tests\\test_audit_cli.py",
+      "sha256": "fdb8c18a9634571fbc69ba5de68f6b6d09efebcce6561b7d9ea095332db7a06f"
+    },
+    {
+      "source": "E:\\codex_competitions\\worktrees\\11_competition_implementation_hub\\13_product_workspaces\\ai4climate_tea_guard_candidate_a0_20261018\\tests\\test_decision_kernel.py",
+      "path": "tests\\test_decision_kernel.py",
+      "sha256": "207e2f2bf14285a36716d8bcaab6cf39c0abad46a0ca86918ebaea7998b65067"
+    },
+    {
+      "source": "E:\\codex_competitions\\worktrees\\11_competition_implementation_hub\\13_product_workspaces\\ai4climate_tea_guard_candidate_a0_20261018\\tests\\test_forecast_contract.py",
+      "path": "tests\\test_forecast_contract.py",
+      "sha256": "e0774405e5c377279f07aee83f4320dc185548caf21ac273c2b09b72b67dcd97"
+    },
+    {
+      "source": "E:\\codex_competitions\\worktrees\\11_competition_implementation_hub\\13_product_workspaces\\ai4climate_tea_guard_candidate_a0_20261018\\tests\\test_kernel_cli.py",
+      "path": "tests\\test_kernel_cli.py",
+      "sha256": "a6a74cdd4a7f541b1ea93dac6d3036311a5d4f8c7fb39a4c7f822377741698f6"
+    },
+    {
+      "source": "E:\\codex_competitions\\worktrees\\11_competition_implementation_hub\\13_product_workspaces\\ai4climate_tea_guard_candidate_a0_20261018\\tests\\__init__.py",
+      "path": "tests\\__init__.py",
+      "sha256": "595e396dffa21df141625e9687d76703dafc397d1c8fce2b321aa0dd603d45f1"
+    },
+    {
+      "source": "E:\\codex_competitions\\worktrees\\11_competition_implementation_hub\\13_product_workspaces\\ai4climate_tea_guard_candidate_a0_20261018\\fixtures\\decision_demo.json",
+      "path": "fixtures\\decision_demo.json",
+      "sha256": "a3be08a75877a64e490cc32d9682a06e336002818eb2562db702e9555917f2a2"
+    },
+    {
+      "source": "E:\\codex_competitions\\worktrees\\11_competition_implementation_hub\\13_product_workspaces\\ai4climate_tea_guard_candidate_a0_20261018\\fixtures\\demo_records.json",
+      "path": "fixtures\\demo_records.json",
+      "sha256": "4af15c590d9cd80b90cbc94c4ad44b586fd9bf8ed8b326b12f358e1a6a2baa7e"
+    },
+    {
+      "source": "E:\\codex_competitions\\worktrees\\11_competition_implementation_hub\\13_product_workspaces\\ai4climate_tea_guard_candidate_a0_20261018\\references\\fao56_chapter1_fetch.json",
+      "path": "references\\fao56_chapter1_fetch.json",
+      "sha256": "f581f4727e962d637652cef59362880927afc02ba2892aa1ece09602bc5f561e"
+    }
+  ],
+  "model_training": false,
+  "external_publication": false,
+  "current_release": "0.3.0"
+}

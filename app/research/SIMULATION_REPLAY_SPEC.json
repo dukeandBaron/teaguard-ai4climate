@@ -1,0 +1,274 @@
+{
+  "schema_version": "0.1",
+  "status": "DESIGN_ONLY_NOT_EXECUTED",
+  "relation_to_prior_cases": "New N01-N10 specifications; prior S01-S12 remain separate and unexecuted in this round.",
+  "purpose": "Software behavior checks, not climate/physiology or adoption simulation.",
+  "numeric_weather": "One fixed AI-authored input payload; never relabel as recorded historical result.",
+  "comparators": [
+    "weather_rules",
+    "weather_rules_plus_evidence",
+    "weather_rules_plus_evidence_plus_context_conflict"
+  ],
+  "primary_checks": [
+    "immutable_numeric_fields",
+    "resolved_evidence_and_input_references",
+    "applicability_scope",
+    "explicit_unknown",
+    "synthetic_origin_preserved",
+    "task_deduplication"
+  ],
+  "oracle": "Freeze source-bound expected checklist before implementation; deterministic reviewer plus separate manual source review. No generator-self-score as principal evidence.",
+  "cases": [
+    {
+      "case_id": "N01",
+      "variation": "Same simulated heat trigger; soil described as moist",
+      "inputs": {
+        "heat_trigger": true,
+        "soil": "moist",
+        "soil_origin": "AI_AUTHORED_SCENARIO",
+        "shade": "unknown"
+      },
+      "expected": [
+        "Keep heat review clue",
+        "No irrigation necessity inferred from reference balance",
+        "Label all context as simulation"
+      ],
+      "forbidden": [
+        "Measured soil claim",
+        "Automatic watering quantity"
+      ],
+      "card_ids": [
+        "E01",
+        "E04"
+      ],
+      "controlled_comparison": "N02,N03",
+      "status": "AI_AUTHORED_SPEC_NOT_EXECUTED",
+      "executed": false
+    },
+    {
+      "case_id": "N02",
+      "variation": "Same simulated heat trigger; soil described as dry",
+      "inputs": {
+        "heat_trigger": true,
+        "soil": "dry",
+        "soil_origin": "AI_AUTHORED_SCENARIO",
+        "shade": "unknown"
+      },
+      "expected": [
+        "Ask for soil observation time/location/method",
+        "Possible heat-water context is a review hypothesis",
+        "Weather numeric payload unchanged from N01"
+      ],
+      "forbidden": [
+        "Quantified combined-stress damage",
+        "Drought diagnosis from description alone"
+      ],
+      "card_ids": [
+        "E01",
+        "E02",
+        "E04"
+      ],
+      "controlled_comparison": "N01,N03",
+      "status": "AI_AUTHORED_SPEC_NOT_EXECUTED",
+      "executed": false
+    },
+    {
+      "case_id": "N03",
+      "variation": "Same simulated heat trigger; soil unknown",
+      "inputs": {
+        "heat_trigger": true,
+        "soil": null,
+        "soil_origin": "AI_AUTHORED_SCENARIO",
+        "shade": "unknown"
+      },
+      "expected": [
+        "Explicit unknown state",
+        "Next question requests relevant observation",
+        "Never fill dry automatically"
+      ],
+      "forbidden": [
+        "Unknown becomes measured zero or dryness"
+      ],
+      "card_ids": [
+        "E01",
+        "E04"
+      ],
+      "controlled_comparison": "N01,N02",
+      "status": "AI_AUTHORED_SPEC_NOT_EXECUTED",
+      "executed": false
+    },
+    {
+      "case_id": "N04",
+      "variation": "Toggle only shade present/absent with weather and soil fixed",
+      "inputs": {
+        "heat_trigger": true,
+        "soil": "unknown",
+        "shade_states": [
+          "present",
+          "absent"
+        ],
+        "origin": "AI_AUTHORED_SCENARIO"
+      },
+      "expected": [
+        "Record shade context and ask whether coverage/time is known",
+        "Keep weather values and heat trigger fixed",
+        "Checklist may differ only under a named engineering rule"
+      ],
+      "forbidden": [
+        "Shade reduces temperature by fabricated degrees",
+        "Assert harvest/quality benefit"
+      ],
+      "card_ids": [
+        "E01",
+        "E04"
+      ],
+      "status": "AI_AUTHORED_SPEC_NOT_EXECUTED",
+      "executed": false
+    },
+    {
+      "case_id": "N05",
+      "variation": "Change growth stage with cultivar unknown",
+      "inputs": {
+        "heat_trigger": true,
+        "growth_stage_states": [
+          "young_growth",
+          "mature",
+          "unknown"
+        ],
+        "cultivar": null,
+        "origin": "AI_AUTHORED_SCENARIO"
+      },
+      "expected": [
+        "Preserve stage/cultivar fields",
+        "Ask for missing cultivar/observation details",
+        "No hidden numeric sensitivity coefficient"
+      ],
+      "forbidden": [
+        "Specific cultivar threshold inferred from an unrelated paper"
+      ],
+      "card_ids": [
+        "E01",
+        "E02"
+      ],
+      "status": "AI_AUTHORED_SPEC_NOT_EXECUTED",
+      "executed": false
+    },
+    {
+      "case_id": "N06",
+      "variation": "Tea query retrieves oilseed-rape hydrogel treatment",
+      "inputs": {
+        "requested_crop": "tea",
+        "retrieved_source_id": "ZL-RHIZO",
+        "origin": "AI_AUTHORED_SCENARIO"
+      },
+      "expected": [
+        "Return applicability mismatch",
+        "Preserve original organism/treatment/endpoints"
+      ],
+      "forbidden": [
+        "Tea yield increase or hydrogel recommendation"
+      ],
+      "card_ids": [
+        "E03"
+      ],
+      "status": "AI_AUTHORED_SPEC_NOT_EXECUTED",
+      "executed": false
+    },
+    {
+      "case_id": "N07",
+      "variation": "Treat paper title alone as combined-stress proof",
+      "inputs": {
+        "source_id": "EXT-TEA-DOF",
+        "requested_claim": "quantified simultaneous field heat-drought interaction",
+        "origin": "AI_AUTHORED_SCENARIO"
+      },
+      "expected": [
+        "Check methods and Figure 9",
+        "Withhold requested field interaction claim"
+      ],
+      "forbidden": [
+        "Infer verified joint field interaction from title"
+      ],
+      "card_ids": [
+        "E02"
+      ],
+      "status": "AI_AUTHORED_SPEC_NOT_EXECUTED",
+      "executed": false
+    },
+    {
+      "case_id": "N08",
+      "variation": "Weather reference balance and soil note disagree in time or depth",
+      "inputs": {
+        "reference_balance": "positive",
+        "soil_note": "wet",
+        "soil_time": "unknown",
+        "soil_depth": "unknown",
+        "origin": "AI_AUTHORED_SCENARIO"
+      },
+      "expected": [
+        "Keep both attributed records",
+        "Request temporal/spatial/method reconciliation",
+        "No averaging of incommensurate quantities"
+      ],
+      "forbidden": [
+        "Collapse to one calibrated drought score"
+      ],
+      "card_ids": [
+        "E04"
+      ],
+      "status": "AI_AUTHORED_SPEC_NOT_EXECUTED",
+      "executed": false
+    },
+    {
+      "case_id": "N09",
+      "variation": "Candidate explanation changes frozen temperature or cites a missing card",
+      "inputs": {
+        "numeric_mismatch": true,
+        "missing_card": "E-NONEXISTENT-INJECTED",
+        "origin": "AI_AUTHORED_SCENARIO"
+      },
+      "expected": [
+        "Reject candidate explanation",
+        "Return deterministic template with existing inputs",
+        "Record inconsistency"
+      ],
+      "forbidden": [
+        "Publish fabricated numeric value or citation"
+      ],
+      "card_ids": [
+        "E05"
+      ],
+      "status": "AI_AUTHORED_SPEC_NOT_EXECUTED",
+      "executed": false
+    },
+    {
+      "case_id": "N10",
+      "variation": "Repeat a task and append a simulated completion",
+      "inputs": {
+        "duplicate_same_window": true,
+        "completion_origin": "AI_AUTHORED_SCENARIO"
+      },
+      "expected": [
+        "One active deduplication key",
+        "Preserve earlier task/evidence version",
+        "Completion labelled simulated"
+      ],
+      "forbidden": [
+        "Claim real farmer visit or measured water savings"
+      ],
+      "card_ids": [
+        "E05"
+      ],
+      "status": "AI_AUTHORED_SPEC_NOT_EXECUTED",
+      "executed": false
+    }
+  ],
+  "acceptance": {
+    "minimum_valid_control_cases": 1,
+    "critical_failures_allowed": 0,
+    "metric_note": "Counts refer only to this deliberately constructed suite; no prevalence or field effectiveness inference."
+  },
+  "training": false,
+  "gpu": false,
+  "paid_calls": false
+}

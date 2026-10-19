@@ -1,0 +1,8 @@
+runtime/
+__pycache__/
+.ruff_cache/
+artifacts/engineering/
+artifacts/cli_tests/
+artifacts/evidence_tamper/
+artifacts/portable_logs/
+*.pyc

@@ -1,0 +1,323 @@
+{
+  "status": "PASS_LOCAL_V3_ENGINEERING_ACCEPTANCE",
+  "created_utc": "2026-10-19T11:06:57.164961+00:00",
+  "source_manifest": {
+    "artifacts/evaluation.json": "4cffa13f3fb0a1e11dbf635de0d9b7c985db69e8bddce172b0a4996b4d3f9f8b",
+    "artifacts/test_predictions.json": "4c880417acc469f68aac6b0eed3fb07e8a64473ad9508723b58887de52a42ee2",
+    "BUILD_BINDING.json": "6b1a4da0382e73b097252f1468ff03e932df235455d5619b3ce36214fa522c6d",
+    "data/DATA_AUDIT.json": "a1d8e6265c3298bad853d53ecbf789fdad97cc19005ecd5c69bcabdfbac66050",
+    "data/evidence_cards.json": "fd086e87e6632193adc1409e062390cb427c37d7a3e01c2931964b24fbe16545",
+    "data/mechanism_cards.json": "1f5b7691ce52201af9eb82a49af934100466b8b95adef64e687cf06911f2bb80",
+    "data/nature_state_schema.json": "260c8476b7871d8385e291954e603fcf86b40276a4d950681be1f4c6ed387ceb",
+    "data/neighborhood/era5_neighborhood_2015_2025.json": "d9f673fac79d035de69a3f3ab9749364c2a51da88bed594ae153cd4f5ab176f1",
+    "data/neighborhood/PROVENANCE.json": "0afc41f61977f0dff99404aa8c53f38dade7f5829fdcb6608abbcf20e0955504",
+    "data/neighborhood/weather_neighborhood.csv": "9948befee7fff00688b969b57573e79bc7be3049720b91a561b9b26f86981a67",
+    "data/project_status.json": "4baaf6119f91536ed0f4b4ccd326f6ab27d5f3cc23ecadec05d4c31f66376aae",
+    "data/PROVENANCE.json": "1260ef1172acafd144eb4e3988dc2aa173e0d15262a613a2e1683f043dad1640",
+    "data/weather_daily.csv": "47a8bc71d1301c972520c170ccbd9fbc932c07b035578a5207e8ffac6b25f38e",
+    "DESIGN_AND_QA.md": "856a9c2eacf9295437c8883d4cde095d61bf69b55c0155f29e47ff724d74ebec",
+    "docs/ARCHITECTURE.md": "f5fb5f7b8b3d8386aa2f5d56af51bfbdfa30f2d42054700e5e6a2e8abb1c10e0",
+    "docs/DEMO_SCRIPT_V2.md": "ba1a6c7ec035dd9c1c0d1b91ae684548d50adbaae71b2dfd7cc6acda22cae43f",
+    "docs/ENGINEERING_REVIEW.md": "a10adbf41fd506f0ab8616245e5a6f9fbf5b38a249e2c8617845cc928a4b406f",
+    "docs/OPERATIONS.md": "cb531155baa83a96f10fdd439224d67df6086fb6974567d94186bcb0f5c22934",
+    "docs/PROJECT_DESCRIPTION_V2.md": "27b3e821607736e3a1c19f1cc571bd8112a90a1eecd5983228a33e33aac8ebe5",
+    "fixtures/decision_demo.json": "a3be08a75877a64e490cc32d9682a06e336002818eb2562db702e9555917f2a2",
+    "fixtures/demo_records.json": "4af15c590d9cd80b90cbc94c4ad44b586fd9bf8ed8b326b12f358e1a6a2baa7e",
+    "METHOD_CONTRIBUTIONS.md": "4cfafa70c9b7000997182fed3ed9174a08153f1c0b485bac642f43207f70bf84",
+    "nature_server.py": "9ec321562bda8851ae8aca547447dda3ab32e0eab82a07654edf485f7de54cac",
+    "package.json": "e481123ab17a8d417c9511a8be80e8ea9e0cb8f478fc5c49f91e36288e597de7",
+    "PARENT_V2_BINDING.json": "b1567e7b6abd7634ecefe8bbf4f1787eb688b7251637e1f98e8d009ab7af27b1",
+    "README.md": "7500eea8311c2c66cab4c41115a4e8935de4ab4f5b63633abf71ddff89e48fbb",
+    "reference_baseline/model.py": "63da33b4c6f0e0525732c3afa30630a3d965c06e3f8ca07de46fa34f046c1fac",
+    "reference_baseline/README.md": "4d243e5a1c0fe4750f4e35420647eb41bd75551011da0e5f73a28fb184ac5890",
+    "references/fao56_chapter1_fetch.json": "f581f4727e962d637652cef59362880927afc02ba2892aa1ece09602bc5f561e",
+    "requirements-dev.txt": "66f9e34eae9e251890c5f769546d0032bf032cc70517fb302e8812dd0e9e217a",
+    "research/MECHANISM_EVIDENCE_CARDS.json": "c84d9f1948783e0d21f6bb50e8f7c83555196b5b7e5ae1b98de3dc2cf1ba78c5",
+    "research/NATURE_STATE_SCHEMA.json": "8843875bc5eae049c70d566a6bb556fa19126abd81f3183c79172b480a6d04ab",
+    "research/SIMULATION_REPLAY_SPEC.json": "d6df6002dc7cabf90930a5306d266f08587d205299f0202b43465eb2b799e533",
+    "research/SOURCE_REGISTER.json": "960e66ac6284c8bb096bef0fb810182b84ba05220df0d3f2359a640e5fb78fe6",
+    "scripts/acquire_neighborhood.py": "d6169519e414cd4946eee514f7894de01bf12de6f7c843512eceb89a6510b04f",
+    "scripts/audit_data_coverage.py": "41e220e3bd9b695b884acc0aae273f5be67082085654bbf4d1ed8559034ac11b",
+    "scripts/audit_forecast_availability.py": "7ac4fc6bf21f11b46cf9f37991ed912ec1c72d210ec8f17bb98b9c605a334f73",
+    "scripts/build_demo_fixtures.py": "fc01a13467748c27a1f8a08a80f721ed4a88605c0bce8bc4da5f39ebd97c0047",
+    "scripts/build_local_review.py": "434ee407f73e4c6c6f2dd3341c5147505082f3c033300171ec0c97f340994bb7",
+    "scripts/doctor_local.py": "59439e483b7134a8c98543501534f4e506955d5a2b02e472a24a296edb03e539",
+    "scripts/launch_local.py": "480a64997be4b695845f7a91d43142bce6d0102a26dd90da6a26561eb9a180ec",
+    "scripts/package_local_v2.py": "673b67a30c749f75b29e350556ea512a254418c4ea4adcfa9eaf6bc32af4e645",
+    "scripts/package_local_v3.py": "c3993209ca731a9aaf1f65935c607d2103774d35c4ef5a4312802f49d058c202",
+    "scripts/polish_local_copy.py": "424a253991f399e95ef57cf5185d889e194b9ed7591133754e2c94405d245018",
+    "scripts/prepare_runtime_schema.py": "dac99d92ae66ceac6e58003058b1da85f0966a25e9f4ecae390b92d8560f75ff",
+    "scripts/replay_nature_context.py": "8bc310eb27c1e9378b4fe6eb7d49c8b29ccc19fbc8dc968c086ab861935d29e6",
+    "scripts/reproduce_context_gap.py": "f4ad80c2434c85ffe3fea2d5b3a10344e2413ab95de36efa6b123118f795bdab",
+    "scripts/run_offline_kernel.py": "beaf6d4c5a4d05dd367445143b245660c5930f2bf114d5043ab9c8d135d93a2b",
+    "scripts/verify_engineering.py": "38bb103becafb169e6a0c15a626ff4829ddac667d28c02675a2af360cf7fb12b",
+    "scripts/verify_nature_v2.py": "e656c669f62b4ae56a00dbeae5e5f6315c20dbc99bf1cc3f23119a0d74feca48",
+    "scripts/verify_portable.py": "097d231a0730617b667102f3259fb563b6315a45eff703b6acafa5310d28bb8e",
+    "start_teaguard_nature.cmd": "7d9108abe0eacfb8ff84a6d1acf148e3b6e36e2fd5be81eedd3862bc13565731",
+    "submission/DATA_AI_STATEMENT.md": "05774ed624721b9c2cc10751c6958201c367d7c55235dbd2f02ff93c10ed00a3",
+    "submission/DEMO_SCRIPT_V3_1.md": "dde1798db44bb3f2c8991d646e3bf7e0c62614f9c9c37f15b78a7cbba7e4c365",
+    "submission/FORM_TEXT_ZH.md": "5ac532ff2673128d0fe2663504210764744a2b38ee7df5fe3a90b33c55b68abc",
+    "submission/PROJECT_STATEMENT_ZH.md": "7b5141983b9d4868ded15401c9591eaf807fd3dd044d830cccc53f2ef19e08ae",
+    "submission/RELEASE_INDEX.md": "f693c0e5febad0b5fb6a92ebf2e81dd6205e19ef2e16a473cf04a7ab353953bf",
+    "submission/RELEASE_NOTES.md": "80101dd931530c0c9e92d6968a6e19c63e516b1e70e9d4d1f0a3c54dce6c426e",
+    "submission/VALIDATION_90_DAYS.md": "7515b4ae24689de56e34e2563157d9d9c957aa8d7478929b7f2ca3cbd4802564",
+    "teaguard/__init__.py": "257c67d79f47445a6bd7bf15ac45c9ac0cfec7d1da4d3b9886f990e711c3354e",
+    "teaguard/contracts.py": "1be28fdf17c2d5a2551a21f4532820a2bc19b20aa35bcbe4145039c5fb634a0e",
+    "teaguard/decision_kernel.py": "e96fa147408aaa8d95e1186e383ce82937c3508be5bc30b60780ed56a658ce89",
+    "teaguard/evidence_catalog.py": "3e0b5fb3a4c9ff48009573c14a88816ee6130ae3ade75665d0814c5ca523204f",
+    "teaguard/forecast_contract.py": "c655b4119bea0f78cb51a944ed881fd66ae87b30cbdd23bfdc435f4d14769807",
+    "teaguard/graph_projection.py": "6f661c19904db6137d150367abba8596e407ea8a8bd836e58836e39bf4a5d03a",
+    "teaguard/http_app.py": "e6c9701d64a783aa082febcacaed17708aeeaf84983ee8e4e0224f6c2f5873ec",
+    "teaguard/inspection_policy.py": "bd0bc42a26376af75e755c3374a2dd01b913a7f86d9110262ae5f8afb30d388a",
+    "teaguard/nature.py": "051b2fddcf4d64434d8cc72527c287a2451e7ab74ef82e79806221074895c5bc",
+    "teaguard/nature_service.py": "3a1c04d2114636996c61cee8a4b882b318e668cd7acd6e7013a2f0eb556ebfe4",
+    "teaguard/nature_state.py": "885d767fa1eaa9029279a90a91f8bd1e349532002541233ce9d7df11e17f6bc7",
+    "teaguard/record_store.py": "ea1ed60932cd1c3818eba12520eaf9bde87be7e1a264a4047a14d835325d9ed1",
+    "teaguard/scope_policy.py": "9e3eb1d3f1984cf5671defb47b2c724cf9de4d7fcbed6c6cb2587b645bab0187",
+    "teaguard/serialization.py": "f175ca723f5d84f78cc681c3a83d1e4ade961f29331cc0212244c4b2443c36b9",
+    "teaguard/weather_repository.py": "3e4f5fdf3aad9a61a2dbacbb3689498c104760fd1a42fe1fc42f23b1ea907172",
+    "tests/__init__.py": "595e396dffa21df141625e9687d76703dafc397d1c8fce2b321aa0dd603d45f1",
+    "tests/cases.py": "7944cb9e762360ad335b4876fa9bac7c53cb921bea2011bdffe29fabdba6f87b",
+    "tests/frontend_contracts.test.mjs": "639ff63e80756c52b9b3e07aece965f945c57a922352863882b457385b31872a",
+    "tests/test_audit_cli.py": "fdb8c18a9634571fbc69ba5de68f6b6d09efebcce6561b7d9ea095332db7a06f",
+    "tests/test_decision_kernel.py": "207e2f2bf14285a36716d8bcaab6cf39c0abad46a0ca86918ebaea7998b65067",
+    "tests/test_engineering_contracts.py": "6040c4fca4bc46996a18620be0120afe5b935e1b578f9f848c0146f27ad7c154",
+    "tests/test_engineering_http.py": "354b6516f8f3bde374fcf41c5ffa7f2e421dfc894a8ac51497a3f7335ca7bd93",
+    "tests/test_forecast_contract.py": "e0774405e5c377279f07aee83f4320dc185548caf21ac273c2b09b72b67dcd97",
+    "tests/test_kernel_cli.py": "a6a74cdd4a7f541b1ea93dac6d3036311a5d4f8c7fb39a4c7f822377741698f6",
+    "tests/test_nature_context.py": "2ada6cd6aacc0ac1ec188269f5f0e7dcb7480eab0a805bc1d6da3c80d17a8abd",
+    "tests/test_nature_http.py": "6e7d220aa4f5899fedbc1fbf7610becf049cfce463297cfa6572918d4c90b5dd",
+    "tests/test_release_regressions.py": "214c176f9c2ff6e2a80fabed698fed586a032dd9e2b5571c274eb84189200d03",
+    "web/api.js": "02e941b18a3f8b083614b6567a9ea926bf96e9c15e033bf6be91f6408274ed9c",
+    "web/app.js": "05732668d7e641a004203bcb5b455f9ec2da49321e88ef221c0350aafa7ac984",
+    "web/export.js": "2b882638bc4cbe8d0e9255d8067f098337e74384a994acf3604c17a93255e2fe",
+    "web/graph.js": "1acf65b08b4265af0003fe4968aa302e04d6f320caacb38ba2c70206a71a9660",
+    "web/index.html": "f858a8be20e2df7fb1dbee966dd93b6c65980d75347109e7a508419c3050eeed",
+    "web/style.css": "385e261279e6323f026ce9cedb71fc374cd40d1c768a616bca11b56ed36c3bc9",
+    "web/views.js": "e2416534f3930c98d2c3dc62eae04e679dc15a9300c72c4804f340a49efbc36c"
+  },
+  "engine_sha256": "2851f2fab5be1363481b47f956d39889e7b1380f76a9acd1fec3e7810478d577",
+  "frozen_v1_files_checked": 25,
+  "parent_v2_files_checked": 55,
+  "stage_checks": [
+    {
+      "stage": "unittest",
+      "exit_code": 0,
+      "before": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "after": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "log": "artifacts/acceptance_logs/unittest.txt",
+      "tests_run": 105
+    },
+    {
+      "stage": "ruff_check",
+      "exit_code": 0,
+      "before": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "after": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "log": "artifacts/acceptance_logs/ruff_check.txt"
+    },
+    {
+      "stage": "ruff_format",
+      "exit_code": 0,
+      "before": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "after": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "log": "artifacts/acceptance_logs/ruff_format.txt"
+    },
+    {
+      "stage": "javascript_api",
+      "exit_code": 0,
+      "before": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "after": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "log": "artifacts/acceptance_logs/javascript_api.txt"
+    },
+    {
+      "stage": "javascript_app",
+      "exit_code": 0,
+      "before": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "after": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "log": "artifacts/acceptance_logs/javascript_app.txt"
+    },
+    {
+      "stage": "javascript_export",
+      "exit_code": 0,
+      "before": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "after": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "log": "artifacts/acceptance_logs/javascript_export.txt"
+    },
+    {
+      "stage": "javascript_graph",
+      "exit_code": 0,
+      "before": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "after": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "log": "artifacts/acceptance_logs/javascript_graph.txt"
+    },
+    {
+      "stage": "javascript_views",
+      "exit_code": 0,
+      "before": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "after": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "log": "artifacts/acceptance_logs/javascript_views.txt"
+    },
+    {
+      "stage": "frontend_contracts",
+      "exit_code": 0,
+      "before": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "after": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "log": "artifacts/acceptance_logs/frontend_contracts.txt"
+    },
+    {
+      "stage": "doctor",
+      "exit_code": 0,
+      "before": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "after": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "log": "artifacts/acceptance_logs/doctor.txt"
+    },
+    {
+      "stage": "nature_replay",
+      "exit_code": 0,
+      "before": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "after": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "log": "artifacts/acceptance_logs/nature_replay.txt"
+    },
+    {
+      "stage": "data_audit",
+      "exit_code": 0,
+      "before": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "after": {
+        "v2_changed": [],
+        "frozen_v1_changed": [],
+        "parent_v2_changed": [],
+        "passed": true
+      },
+      "log": "artifacts/acceptance_logs/data_audit.txt"
+    }
+  ],
+  "syntax_files_checked": 45,
+  "live_server_matches": true,
+  "browser_receipt_matches": true,
+  "final_guard": {
+    "v2_changed": [],
+    "frozen_v1_changed": [],
+    "parent_v2_changed": [],
+    "passed": true
+  },
+  "failures": [],
+  "training": false,
+  "paid_api_calls": false,
+  "field_effectiveness_verified": false,
+  "official_submission": false
+}

@@ -1,0 +1,352 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-10-19T11:06:45.655Z",
+  "version": "0.3.1",
+  "health": {
+    "status": "ok",
+    "version": "0.3.1",
+    "model_fit": false,
+    "name": "茶候 · 自然情境",
+    "engine_sha256": "2851f2fab5be1363481b47f956d39889e7b1380f76a9acd1fec3e7810478d577",
+    "startup_sources": {
+      "nature_server.py": "9ec321562bda8851ae8aca547447dda3ab32e0eab82a07654edf485f7de54cac",
+      "teaguard/__init__.py": "257c67d79f47445a6bd7bf15ac45c9ac0cfec7d1da4d3b9886f990e711c3354e",
+      "teaguard/contracts.py": "1be28fdf17c2d5a2551a21f4532820a2bc19b20aa35bcbe4145039c5fb634a0e",
+      "teaguard/decision_kernel.py": "e96fa147408aaa8d95e1186e383ce82937c3508be5bc30b60780ed56a658ce89",
+      "teaguard/evidence_catalog.py": "3e0b5fb3a4c9ff48009573c14a88816ee6130ae3ade75665d0814c5ca523204f",
+      "teaguard/forecast_contract.py": "c655b4119bea0f78cb51a944ed881fd66ae87b30cbdd23bfdc435f4d14769807",
+      "teaguard/graph_projection.py": "6f661c19904db6137d150367abba8596e407ea8a8bd836e58836e39bf4a5d03a",
+      "teaguard/http_app.py": "e6c9701d64a783aa082febcacaed17708aeeaf84983ee8e4e0224f6c2f5873ec",
+      "teaguard/inspection_policy.py": "bd0bc42a26376af75e755c3374a2dd01b913a7f86d9110262ae5f8afb30d388a",
+      "teaguard/nature.py": "051b2fddcf4d64434d8cc72527c287a2451e7ab74ef82e79806221074895c5bc",
+      "teaguard/nature_service.py": "3a1c04d2114636996c61cee8a4b882b318e668cd7acd6e7013a2f0eb556ebfe4",
+      "teaguard/nature_state.py": "885d767fa1eaa9029279a90a91f8bd1e349532002541233ce9d7df11e17f6bc7",
+      "teaguard/record_store.py": "ea1ed60932cd1c3818eba12520eaf9bde87be7e1a264a4047a14d835325d9ed1",
+      "teaguard/scope_policy.py": "9e3eb1d3f1984cf5671defb47b2c724cf9de4d7fcbed6c6cb2587b645bab0187",
+      "teaguard/serialization.py": "f175ca723f5d84f78cc681c3a83d1e4ade961f29331cc0212244c4b2443c36b9",
+      "teaguard/weather_repository.py": "3e4f5fdf3aad9a61a2dbacbb3689498c104760fd1a42fe1fc42f23b1ea907172",
+      "web/api.js": "02e941b18a3f8b083614b6567a9ea926bf96e9c15e033bf6be91f6408274ed9c",
+      "web/app.js": "05732668d7e641a004203bcb5b455f9ec2da49321e88ef221c0350aafa7ac984",
+      "web/export.js": "2b882638bc4cbe8d0e9255d8067f098337e74384a994acf3604c17a93255e2fe",
+      "web/graph.js": "1acf65b08b4265af0003fe4968aa302e04d6f320caacb38ba2c70206a71a9660",
+      "web/index.html": "f858a8be20e2df7fb1dbee966dd93b6c65980d75347109e7a508419c3050eeed",
+      "web/style.css": "385e261279e6323f026ce9cedb71fc374cd40d1c768a616bca11b56ed36c3bc9",
+      "web/views.js": "e2416534f3930c98d2c3dc62eae04e679dc15a9300c72c4804f340a49efbc36c",
+      "data/mechanism_cards.json": "1f5b7691ce52201af9eb82a49af934100466b8b95adef64e687cf06911f2bb80",
+      "data/nature_state_schema.json": "260c8476b7871d8385e291954e603fcf86b40276a4d950681be1f4c6ed387ceb",
+      "data/project_status.json": "4baaf6119f91536ed0f4b4ccd326f6ab27d5f3cc23ecadec05d4c31f66376aae",
+      "research/SOURCE_REGISTER.json": "960e66ac6284c8bb096bef0fb810182b84ba05220df0d3f2359a640e5fb78fe6",
+      "data/weather_daily.csv": "47a8bc71d1301c972520c170ccbd9fbc932c07b035578a5207e8ffac6b25f38e",
+      "data/PROVENANCE.json": "1260ef1172acafd144eb4e3988dc2aa173e0d15262a613a2e1683f043dad1640",
+      "artifacts/test_predictions.json": "4c880417acc469f68aac6b0eed3fb07e8a64473ad9508723b58887de52a42ee2",
+      "artifacts/evaluation.json": "4cffa13f3fb0a1e11dbf635de0d9b7c985db69e8bddce172b0a4996b4d3f9f8b"
+    },
+    "storage": "sqlite_content_checked"
+  },
+  "checks": [
+    {
+      "check": "distinct_task_layout_N01",
+      "passed": true
+    },
+    {
+      "check": "distinct_task_layout_N02",
+      "passed": true
+    },
+    {
+      "check": "distinct_task_layout_N03",
+      "passed": true
+    },
+    {
+      "check": "distinct_task_layout_N04",
+      "passed": true
+    },
+    {
+      "check": "distinct_task_layout_N05",
+      "passed": true
+    },
+    {
+      "check": "distinct_task_layout_N06",
+      "passed": true
+    },
+    {
+      "check": "distinct_task_layout_N07",
+      "passed": true
+    },
+    {
+      "check": "distinct_task_layout_N08",
+      "passed": true
+    },
+    {
+      "check": "distinct_task_layout_N09",
+      "passed": true
+    },
+    {
+      "check": "distinct_task_layout_N10",
+      "passed": true
+    },
+    {
+      "check": "all_ten_same_weather_five_cards",
+      "passed": true
+    },
+    {
+      "check": "soil_provenance_first",
+      "passed": true
+    },
+    {
+      "check": "stale_export_disabled",
+      "passed": true
+    },
+    {
+      "check": "changed_soil_reopens_joint",
+      "passed": true
+    },
+    {
+      "check": "unrelated_soil_retains_heat",
+      "passed": true
+    },
+    {
+      "check": "every_task_basis_hash",
+      "passed": true
+    },
+    {
+      "check": "reopen_warning_visible",
+      "passed": true
+    },
+    {
+      "check": "same_basis_retains_done",
+      "passed": true
+    },
+    {
+      "check": "shade_tasks_only",
+      "passed": true
+    },
+    {
+      "check": "stage_tasks_only",
+      "passed": true
+    },
+    {
+      "check": "positive_scope",
+      "passed": true
+    },
+    {
+      "check": "species_mismatch",
+      "passed": true
+    },
+    {
+      "check": "historical_date",
+      "passed": true
+    },
+    {
+      "check": "synthetic_control_date_aligned",
+      "passed": true
+    },
+    {
+      "check": "synthetic_payload_date_aligned",
+      "passed": true
+    },
+    {
+      "check": "inflight_locks",
+      "passed": true
+    },
+    {
+      "check": "undo_lineage",
+      "passed": true
+    },
+    {
+      "check": "independent_no_parent",
+      "passed": true
+    },
+    {
+      "check": "graph_drag_detail",
+      "passed": true
+    },
+    {
+      "check": "graph_reset",
+      "passed": true
+    },
+    {
+      "check": "graph_keyboard",
+      "passed": true
+    },
+    {
+      "check": "invalid_historical_date",
+      "passed": true
+    },
+    {
+      "check": "missing_parent_structured_recovery",
+      "passed": true
+    },
+    {
+      "check": "explicit_error_recovery",
+      "passed": true
+    },
+    {
+      "check": "preview_ai_label",
+      "passed": true
+    },
+    {
+      "check": "actual_downloads_basis_and_boundary",
+      "passed": true
+    },
+    {
+      "check": "old_version_matches_controls",
+      "passed": true
+    },
+    {
+      "check": "five_completion_boundaries",
+      "passed": true
+    },
+    {
+      "check": "all_five_evidence_cards",
+      "passed": true
+    },
+    {
+      "check": "data_replay_and_grid_counts",
+      "passed": true
+    },
+    {
+      "check": "desktop_no_horizontal_overflow",
+      "passed": true
+    },
+    {
+      "check": "fresh_browser_server_history",
+      "passed": true
+    },
+    {
+      "check": "mobile_update_provenance_question",
+      "passed": true
+    },
+    {
+      "check": "mobile_actual_touch_pan",
+      "passed": true
+    },
+    {
+      "check": "mobile_fit_evidence",
+      "passed": true
+    },
+    {
+      "check": "mobile_fit_data",
+      "passed": true
+    },
+    {
+      "check": "mobile_fit_workspace",
+      "passed": true
+    },
+    {
+      "check": "no_page_script_errors",
+      "passed": true
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "N01",
+      "weather_hash": "624789c5d4504dfca372fb9ac43b3a325ac6ca3deb16adfabaf6683d19c231d6",
+      "cards": 5,
+      "flags": [
+        "CONTEXT_CONFLICT_RETAINED"
+      ],
+      "claim": "CONTEXT_CHECK_ONLY"
+    },
+    {
+      "case_id": "N02",
+      "weather_hash": "624789c5d4504dfca372fb9ac43b3a325ac6ca3deb16adfabaf6683d19c231d6",
+      "cards": 5,
+      "flags": [],
+      "claim": "CONTEXT_CHECK_ONLY"
+    },
+    {
+      "case_id": "N03",
+      "weather_hash": "624789c5d4504dfca372fb9ac43b3a325ac6ca3deb16adfabaf6683d19c231d6",
+      "cards": 5,
+      "flags": [],
+      "claim": "CONTEXT_CHECK_ONLY"
+    },
+    {
+      "case_id": "N04",
+      "weather_hash": "624789c5d4504dfca372fb9ac43b3a325ac6ca3deb16adfabaf6683d19c231d6",
+      "cards": 5,
+      "flags": [],
+      "claim": "CONTEXT_CHECK_ONLY"
+    },
+    {
+      "case_id": "N05",
+      "weather_hash": "624789c5d4504dfca372fb9ac43b3a325ac6ca3deb16adfabaf6683d19c231d6",
+      "cards": 5,
+      "flags": [],
+      "claim": "CONTEXT_CHECK_ONLY"
+    },
+    {
+      "case_id": "N06",
+      "weather_hash": "624789c5d4504dfca372fb9ac43b3a325ac6ca3deb16adfabaf6683d19c231d6",
+      "cards": 5,
+      "flags": [],
+      "claim": "WITHHELD"
+    },
+    {
+      "case_id": "N07",
+      "weather_hash": "624789c5d4504dfca372fb9ac43b3a325ac6ca3deb16adfabaf6683d19c231d6",
+      "cards": 5,
+      "flags": [],
+      "claim": "WITHHELD"
+    },
+    {
+      "case_id": "N08",
+      "weather_hash": "624789c5d4504dfca372fb9ac43b3a325ac6ca3deb16adfabaf6683d19c231d6",
+      "cards": 5,
+      "flags": [
+        "CONTEXT_CONFLICT_RETAINED"
+      ],
+      "claim": "CONTEXT_CHECK_ONLY"
+    },
+    {
+      "case_id": "N09",
+      "weather_hash": "624789c5d4504dfca372fb9ac43b3a325ac6ca3deb16adfabaf6683d19c231d6",
+      "cards": 5,
+      "flags": [
+        "EXPLANATION_REJECTED"
+      ],
+      "claim": "CONTEXT_CHECK_ONLY"
+    },
+    {
+      "case_id": "N10",
+      "weather_hash": "624789c5d4504dfca372fb9ac43b3a325ac6ca3deb16adfabaf6683d19c231d6",
+      "cards": 5,
+      "flags": [],
+      "claim": "CONTEXT_CHECK_ONLY"
+    }
+  ],
+  "page_errors": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "visual_review": {
+    "status": "PASS",
+    "screenshots": [
+      "desktop_final.png",
+      "completion_final.png",
+      "evidence_scope_final.png",
+      "evidence_lower_final.png",
+      "data_replay_final.png",
+      "tasks_final.png",
+      "mobile_initial.png",
+      "mobile_graph_pan.png"
+    ],
+    "notes": "Task layout collision reproduced and fixed; final sequential scenarios have distinct task positions. Page has no horizontal overflow; graph scroll is local. Input controls, task list and caption areas reviewed."
+  },
+  "exploratory": [
+    "malformed previous-version request forwarded to actual backend then recovered explicitly",
+    "invalid historical date then valid recovery",
+    "actual latency added to feedback to inspect locks",
+    "same basis versus changed basis versus unrelated context",
+    "fresh browser retrieves server history"
+  ],
+  "training": false,
+  "field_effectiveness_verified": false
+}

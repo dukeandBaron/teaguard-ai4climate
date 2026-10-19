@@ -1,0 +1,14 @@
+{
+  "version": "0.3.1",
+  "scope": "本机历史回放与AI情境核查",
+  "field_effectiveness_verified": false,
+  "new_forecast_accuracy_verified": false,
+  "official_submission_verified": false,
+  "capabilities": [
+    {"label": "输入与核查流程", "status": "IMPLEMENTED_LOCAL", "detail": "自然情境、五卡适用条件、任务、模拟反馈和下载已接通。"},
+    {"label": "关系图与版本保存", "status": "IMPLEMENTED_LOCAL", "detail": "关系图可拖动；记录在本机保存，刷新或换一个浏览器窗口后仍可查询。"},
+    {"label": "天气预测", "status": "FROZEN_BASELINE", "detail": "读取原V1保存预测。未训练新模型，未证明新增精度收益。"},
+    {"label": "地块与田间效果", "status": "SIMULATION_ONLY", "detail": "土壤与现场条件为AI情境，真实损伤、产量和收益标签均未取得。"},
+    {"label": "比赛平台提交", "status": "NOT_VERIFIED", "detail": "本机完成度不代表官网附件已更新或正式提报完成。"}
+  ]
+}

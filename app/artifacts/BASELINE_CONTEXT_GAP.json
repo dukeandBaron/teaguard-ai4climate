@@ -1,0 +1,31 @@
+{
+  "status": "CONFIRMED_NEW_CONTEXT_CONTRACT_GAP",
+  "meaning": "Frozen V1 does not consume shade/growth fields required by the new scope; this is not a failure of V1 weather accuracy or the cited papers.",
+  "service_sha256": "4a7bf1d8a19d49e1d06c7350d9f75840743f54463c5b7a8e3271f7bd08dd2c8b",
+  "prediction_source": "saved2025 predictions; original decision controller executed with a frozen prediction adapter",
+  "checks": [
+    {
+      "requirement": "N04_shade",
+      "field": "shade",
+      "outputs_identical": true,
+      "task_titles": [
+        "优先在清晨巡查热暴露位置",
+        "检查已有遮阴设施和人员作业安排",
+        "记录本次判断的依据和现场条件"
+      ]
+    },
+    {
+      "requirement": "N05_growth",
+      "field": "growth_stage",
+      "outputs_identical": true,
+      "task_titles": [
+        "优先在清晨巡查热暴露位置",
+        "检查已有遮阴设施和人员作业安排",
+        "记录本次判断的依据和现场条件"
+      ]
+    }
+  ],
+  "fit_called": false,
+  "training": false,
+  "gpu": false
+}

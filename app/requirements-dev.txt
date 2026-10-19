@@ -1,0 +1,2 @@
+# Optional verification dependency. Running nature_server.py needs no pip package.
+jsonschema>=4.0

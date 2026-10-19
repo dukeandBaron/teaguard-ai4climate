@@ -1,0 +1,315 @@
+{
+  "as_of": "2026-10-18",
+  "scope": "bounded topical research, not an exhaustive Zhejiang Lab bibliography",
+  "new_papers_with_confirmed_zhejiang_affiliations": 3,
+  "reference_code_executed": false,
+  "weights_downloaded": false,
+  "sources": [
+    {
+      "id": "ZL-FALCON",
+      "title": "Falcon: A Remote Sensing Vision-Language Foundation Model (Technical Report)",
+      "url": "https://arxiv.org/html/2503.11070v2",
+      "version": "2503.11070v2, 2025-10-16",
+      "classification": "ZHEJIANG_LAB_AUTHOR_AFFILIATION_CONFIRMED",
+      "affiliation_evidence": "Research Center for Space Computing System, ZhejiangLab; author block",
+      "access": "FULL_TEXT_RETRIEVED_METHOD_AND_EXPERIMENT_SECTIONS_READ",
+      "local_files": [
+        "sources/falcon.html",
+        "sources/falcon.txt",
+        "sources/TianHuiLab_Falcon_README.md"
+      ],
+      "repo": "https://github.com/TianHuiLab/Falcon",
+      "commit": "d905f78823b81a6e8b87c7085487aadb5b1adc30",
+      "claim_anchor": "model architecture; training setup; README Training Dataset / License",
+      "findings": [
+        "Image/region/pixel task granularity",
+        "0.7B model; paper training setting reports 160 A100 GPUs for four days",
+        "README still marks Falcon_SFT dataset coming soon"
+      ],
+      "transfer": "Represent region, plot context and local observation separately; no remote-sensing inference added",
+      "limits": [
+        "No tea crop labels in current project",
+        "Small parameter count does not make reproduction inexpensive",
+        "Code MIT does not settle third-party model/data terms"
+      ]
+    },
+    {
+      "id": "ZL-SPECCLIP",
+      "title": "SpecCLIP: Aligning and Translating Spectroscopic Measurements for Stars",
+      "url": "https://arxiv.org/html/2507.01939v4",
+      "version": "2507.01939v4, 2025-12-19",
+      "classification": "ZHEJIANG_LAB_JOINT_AUTHOR_AFFILIATION_CONFIRMED",
+      "affiliation_evidence": "Guirong Xue and Xiaoyu Tang; Zhejiang Laboratory affiliations in author block",
+      "access": "FULL_TEXT_RETRIEVED_METHOD_AND_DISCUSSION_READ",
+      "local_files": [
+        "sources/specclip.html",
+        "sources/specclip.txt",
+        "sources/Xiaosheng-Zhao_SpecCLIP_README.md"
+      ],
+      "repo": "https://github.com/Xiaosheng-Zhao/SpecCLIP",
+      "commit": "9262c79e864093b889c76fe29d856bdcfbccad37",
+      "claim_anchor": "Introduction CLIP limitation; method auxiliary decoders; Discussion; README tutorials",
+      "findings": [
+        "LAMOST LRS / Gaia XP alignment with reconstruction and cross-modal prediction",
+        "Contrastive alignment alone may discard modality-specific information"
+      ],
+      "transfer": "Preserve provenance, units, spatial support, quality and unique information of each input; a data-design analogy, not use of the trained encoder",
+      "limits": [
+        "Stellar spectroscopy is a different physical task",
+        "No agricultural accuracy transfer",
+        "Tutorial checkpoint about 4.5 GB; not downloaded or executed"
+      ]
+    },
+    {
+      "id": "ZL-RHIZO",
+      "title": "Rhizobacteria protective hydrogel to promote plant growth and adaption to acidic soil",
+      "url": "https://www.nature.com/articles/s41467-025-56988-3",
+      "doi": "10.1038/s41467-025-56988-3",
+      "classification": "ZHEJIANG_LAB_JOINT_AUTHOR_AFFILIATION_CONFIRMED",
+      "affiliation_evidence": "Nannan Li: Research Center for Intelligent Computing Platforms, Zhejiang Lab; author affiliations",
+      "access": "FULL_TEXT_RETRIEVED_MECHANISM_METHODS_AND_AFFILIATION_READ",
+      "local_files": [
+        "sources/hydrogel.html",
+        "sources/hydrogel.txt"
+      ],
+      "claim_anchor": "Abstract; root colonization/suberin/auxin results; Authors and Affiliations",
+      "findings": [
+        "Brassica napus and Ensifer C5; PMH protection, colonization and root response under acidic-soil conditions"
+      ],
+      "transfer": "Treat soil and root context as distinct information needs; mechanism evidence must retain organism and experiment conditions",
+      "limits": [
+        "Cross-species analogy only",
+        "Oilseed-rape treatment effect is not a tea-garden effect",
+        "No hydrogel, bacteria or dosage recommendation"
+      ]
+    },
+    {
+      "id": "ZL-GEOGPT",
+      "title": "GeoGPT official models and platform",
+      "url": "https://github.com/zhejianglab/GeoGPT",
+      "classification": "ZHEJIANG_LAB_OFFICIAL_RESEARCH_RESOURCE",
+      "access": "PINNED_OFFICIAL_README_AND_PLATFORM_READ",
+      "local_files": [
+        "sources/zhejianglab_GeoGPT_README.md",
+        "sources/geogpt_platform.html",
+        "sources/geogpt_platform.txt"
+      ],
+      "commit": "4e54876d9416fdff14e8a9379232817ea01c113b",
+      "findings": [
+        "70B/72B geoscience models; CPT/SFT/DPO; literature and research workflows"
+      ],
+      "transfer": "Separate observed data, literature retrieval and generated explanations",
+      "limits": [
+        "Platform showcase is not independent model evaluation",
+        "Model card intended use is non-commercial research/education; individual licenses require review",
+        "No model loaded or deployed"
+      ]
+    },
+    {
+      "id": "ZL-021",
+      "title": "021 scientific foundation model ecosystem / GeoGPT-VL official release report",
+      "url": "https://en.zhejianglab.com/news/202601/t20260121_4246.shtml",
+      "version": "official news 2026-01-21, reporting release on 2025-12-18",
+      "classification": "ZHEJIANG_LAB_OFFICIAL_NEWS_NOT_EXPERIMENTAL_PAPER",
+      "access": "OFFICIAL_NEWS_RETRIEVED",
+      "local_files": [
+        "sources/021_official.html",
+        "sources/021_official.txt"
+      ],
+      "findings": [
+        "Official description includes GeoGPT-VL scientific image and spatial analysis capabilities"
+      ],
+      "transfer": "Design image/chart/document evidence as typed inputs for future extension",
+      "limits": [
+        "No independently identified technical paper or reproducible benchmark for GeoGPT-VL in this bounded search",
+        "No verified VL weights or deployment in this project"
+      ]
+    },
+    {
+      "id": "ZL-QA",
+      "title": "GeoGPT-QA official dataset card",
+      "url": "https://huggingface.co/datasets/GeoGPT-Research-Project/GeoGPT-QA",
+      "classification": "ZHEJIANG_LAB_OFFICIAL_SYNTHETIC_DATASET_CARD",
+      "access": "OFFICIAL_CARD_READ_VIA_WEB_TOOL_NOT_PINNED_DATA_DOWNLOAD",
+      "local_files": [
+        "CARD_ANCHORS_WEB.json",
+        "SUPPLEMENT_WEB_0.json"
+      ],
+      "claim_anchor": "Dataset Description; License and Intended Uses",
+      "findings": [
+        "Qwen2.5-72B-Instruct synthesizes QA from CC-BY article titles/abstracts",
+        "Card describes 40,000 instances; viewer displays 41.4k rows; not independently recounted",
+        "Card marks CC BY 4.0 and explicitly warns synthetic records may contain errors"
+      ],
+      "transfer": "Use source-bound AI-authored cases for software checks; do not treat generated answers as measured scientific truth",
+      "limits": [
+        "No dataset downloaded; no commit pinned because metadata transport failed",
+        "Generated QA does not prove expert review or field validation"
+      ]
+    },
+    {
+      "id": "ZL-COT",
+      "title": "GeoGPT-CoT-QA official dataset card",
+      "url": "https://huggingface.co/datasets/GeoGPT-Research-Project/GeoGPT-CoT-QA",
+      "classification": "ZHEJIANG_LAB_OFFICIAL_SYNTHETIC_DATASET_CARD",
+      "access": "OFFICIAL_CARD_READ_VIA_WEB_TOOL_NOT_PINNED_DATA_DOWNLOAD",
+      "local_files": [
+        "CARD_ANCHORS_WEB.json",
+        "SUPPLEMENT_WEB_0.json"
+      ],
+      "claim_anchor": "Dataset Description; License and Intended Uses",
+      "findings": [
+        "Full-text-based synthesis by DeepSeek-R1-Distill-Qwen-32B; Qwen2.5-72B-Instruct consistency filtering",
+        "Card reports 39,393 instances and CC BY 4.0"
+      ],
+      "transfer": "Store concise evidence-to-conclusion justifications with source links; no need to train on synthetic reasoning traces",
+      "limits": [
+        "Model consistency filtering is not expert verification",
+        "No dataset downloaded or downstream effect established"
+      ]
+    },
+    {
+      "id": "EXT-PEACE",
+      "title": "PEACE: Empowering Geologic Map Holistic Understanding with MLLMs",
+      "url": "https://arxiv.org/html/2501.06184v1",
+      "version": "2501.06184v1, CVPR 2025",
+      "classification": "EXTERNAL_METHOD_NOT_ZHEJIANG_LAB_AUTHOR_PAPER",
+      "affiliation_evidence": "Microsoft Research; Chinese Academy of Geological Sciences; Wuhan University",
+      "access": "FULL_HTML_RETRIEVED_METHOD_AND_EVALUATION_READ",
+      "local_files": [
+        "sources/peace_arxiv.html",
+        "sources/peace_arxiv.txt",
+        "sources/microsoft_PEACE_README.md"
+      ],
+      "repo": "https://github.com/microsoft/PEACE",
+      "commit": "da994841fc97e5a19e3068a34a86297d17f3f3e2",
+      "findings": [
+        "Hierarchical Information Extraction; Domain Knowledge Injection; Prompt-enhanced QA",
+        "GeoMap-Bench: 124 maps, 3,864 questions, 25 tasks"
+      ],
+      "transfer": "Parse typed observations before domain-evidence matching and explanation; implement sequential functions",
+      "limits": [
+        "No multi-agent runtime adopted",
+        "Geologic-map performance is not tea-garden performance",
+        "Incomplete CVF PDF is retained only as a failed transport artifact; HTML is the usable text"
+      ]
+    },
+    {
+      "id": "EXT-IPCC",
+      "title": "IPCC AR6 WGII Chapter 1: Point of Departure and Key Concepts",
+      "url": "https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-1/",
+      "classification": "AUTHORITATIVE_CONCEPTUAL_RISK_FRAMEWORK",
+      "access": "FULL_CHAPTER_HTML_RETRIEVED_TARGETED_RISK_SECTIONS_READ",
+      "local_files": [
+        "sources/ipcc_risk_chapter1.html",
+        "sources/ipcc_risk_chapter1.txt"
+      ],
+      "claim_anchor": "Executive Summary; risk and adaptation concepts",
+      "findings": [
+        "Risk involves hazards, exposure, vulnerability and responses; interactions and response-related risks matter"
+      ],
+      "transfer": "Separate hazard/context/response information; do not invent a multiplicative numeric score",
+      "limits": [
+        "This framework does not calibrate tea-garden loss probabilities"
+      ]
+    },
+    {
+      "id": "EXT-TEA-DOF",
+      "title": "Genome-Wide Characterization and Functional Analysis of CsDOF Transcription Factors in Camellia sinensis cv. Tieguanyin Under Combined Heat–Drought Stress",
+      "url": "https://www.mdpi.com/2223-7747/14/12/1829",
+      "full_text_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12196898/fullTextXML",
+      "doi": "10.3390/plants14121829",
+      "classification": "EXTERNAL_TEA_MECHANISM_PAPER_NOT_ZHEJIANG_LAB",
+      "affiliation_evidence": "Fujian Agriculture and Forestry University author affiliations",
+      "access": "FULL_XML_RETRIEVED_METHODS_FIGURE_CAPTIONS_AND_RESULTS_READ",
+      "local_files": [
+        "sources/tea_dof_PMC12196898.xml",
+        "sources/tea_dof_PMC12196898.txt"
+      ],
+      "claim_anchor": "Sections 2.9 and 4.9; Figure 9 caption",
+      "findings": [
+        "CsDOF expression under controlled heat and PEG stress",
+        "Despite combined in title, methods and Figure 9 describe separate heat and drought treatments; not used as demonstrated field combined-stress interaction"
+      ],
+      "transfer": "Evidence cards carry cultivar, treatment, time and measured endpoint",
+      "limits": [
+        "40 C chamber and 10% PEG are laboratory treatments, not operational field thresholds",
+        "Gene expression is not a measured yield-loss or irrigation response",
+        "No gene/pathway inference from weather alone"
+      ]
+    },
+    {
+      "id": "EXT-SDG",
+      "title": "Steering open-source AI to accelerate the sustainable development goals",
+      "url": "https://www.nature.com/articles/s41467-026-73866-8",
+      "doi": "10.1038/s41467-026-73866-8",
+      "version": "Nature Communications Comment, 2026-06-11",
+      "classification": "COMMENTARY_NOT_CONFIRMED_ZHEJIANG_LAB_AUTHOR_AFFILIATION",
+      "access": "FULL_TEXT_RETRIEVED_AUTHORS_AND_INTERESTS_CHECKED",
+      "local_files": [
+        "sources/sdg_open_science.html",
+        "sources/sdg_open_science.txt"
+      ],
+      "findings": [
+        "Open science and SDG deployment considerations; John Ludden GeoGPT governance role appears in competing interests, not proof of Zhejiang Lab author affiliation"
+      ],
+      "transfer": "Describe compute footprint, operational usefulness and environmental benefit as separate evidence questions",
+      "limits": [
+        "Not a model-accuracy study",
+        "No measured net climate benefit established for TeaGuard"
+      ]
+    },
+    {
+      "id": "PRIOR-SFANET",
+      "title": "SFANet: Spatial-Frequency Attention Network for Weather Forecasting",
+      "url": "https://arxiv.org/html/2405.18849v1",
+      "classification": "PRIOR_ROUND_ZHEJIANG_LAB_JOINT_PAPER",
+      "access": "INHERITED_PREVIOUS_VERIFIED_RESEARCH_NOT_REREAD_THIS_ROUND",
+      "local_files": [],
+      "prior_report": "../ai4climate_zhejianglab_literature_20261018_01/RESEARCH_MEMO_ZH.md",
+      "transfer": "Multi-threshold and missed-window checks before spatial-network adoption",
+      "limits": [
+        "Radar/ENSO inputs do not match one daily grid"
+      ]
+    },
+    {
+      "id": "PRIOR-DUALSG",
+      "title": "DualSG",
+      "url": "https://arxiv.org/html/2507.21830v3",
+      "classification": "PRIOR_ROUND_ZHEJIANG_LAB_JOINT_PAPER",
+      "access": "INHERITED_PREVIOUS_VERIFIED_RESEARCH_NOT_REREAD_THIS_ROUND",
+      "local_files": [],
+      "prior_report": "../ai4climate_zhejianglab_literature_20261018_01/RESEARCH_MEMO_ZH.md",
+      "transfer": "Numeric and semantic responsibilities separated; deterministic trend first",
+      "limits": [
+        "Existing Weather ablation does not demonstrate a strong LLM gain for TeaGuard"
+      ]
+    },
+    {
+      "id": "PRIOR-GEORAG",
+      "title": "GeoGPT-RAG Technical Report",
+      "url": "https://arxiv.org/html/2509.09686v2",
+      "classification": "PRIOR_ROUND_ZHEJIANG_LAB_PAPER",
+      "access": "INHERITED_PREVIOUS_VERIFIED_RESEARCH_NOT_REREAD_THIS_ROUND",
+      "local_files": [],
+      "prior_report": "../ai4climate_zhejianglab_literature_20261018_01/RESEARCH_MEMO_ZH.md",
+      "transfer": "Retrieval, applicability matching and answer rendering as separate stages",
+      "limits": [
+        "English embedding cannot be assumed suitable for Chinese agronomic retrieval"
+      ]
+    },
+    {
+      "id": "PRIOR-LOWRANK",
+      "title": "Variable-Adaptive Low-Rank Guidance",
+      "url": "https://spj.science.org/doi/abs/10.34133/icomputing.1265",
+      "classification": "PRIOR_ROUND_ZHEJIANG_LAB_JOINT_AFFILIATION_PUBLISHER_INDEX",
+      "access": "PRIOR_PUBLISHER_INDEX_ONLY_DIRECT_FULL_TEXT_403",
+      "local_files": [],
+      "prior_report": "../ai4climate_zhejianglab_literature_20261018_01/RESEARCH_MEMO_ZH.md",
+      "transfer": "Disable conflicting auxiliary information and fall back to the baseline",
+      "limits": [
+        "Not full-text reproduced; algorithm is not directly applicable to ridge forecasting"
+      ]
+    }
+  ]
+}

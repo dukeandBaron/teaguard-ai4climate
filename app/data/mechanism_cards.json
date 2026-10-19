@@ -1,0 +1,157 @@
+{
+  "schema_version": "0.1",
+  "status": "RUNTIME_V2_SCOPE_MATCHING_NO_FIELD_EFFECTIVENESS_CLAIM",
+  "cards": [
+    {
+      "card_id": "E01",
+      "source_ids": [
+        "EXT-IPCC"
+      ],
+      "claim_type": "CONCEPTUAL_FRAMEWORK",
+      "short_claim": "风险解释需要区分天气危险线索、暴露/脆弱性与应对条件。",
+      "source_anchor": "Chapter 1 Executive Summary and risk concepts",
+      "conditions": {
+        "crop": "not crop-specific",
+        "setting": "conceptual climate-risk assessment",
+        "measured_endpoint": null
+      },
+      "supports": [
+        "Structure context and missing-information fields"
+      ],
+      "does_not_support": [
+        "Tea damage probability",
+        "A numeric hazard*exposure*vulnerability score",
+        "Any calibrated irrigation policy"
+      ],
+      "recommended_software_behavior": "Preserve unknown context and request missing evidence before a stronger conclusion.",
+      "action_evidence_class": "ENGINEERING_APPLICATION_OF_CONCEPT",
+      "applicability_default": "CONCEPTUAL_ONLY",
+      "status": "RUNTIME_SCOPE_MATCHING_NO_EFFECTIVENESS_CLAIM",
+      "effectiveness_measured_in_teaguard": false,
+      "origin_status": "RESEARCH_CARD_DESIGN_NOT_PRODUCT_LOADED"
+    },
+    {
+      "card_id": "E02",
+      "source_ids": [
+        "EXT-TEA-DOF"
+      ],
+      "claim_type": "CONTROLLED_TEA_EXPERIMENT",
+      "short_claim": "铁观音茶树受控高温与PEG处理下观察到部分CsDOF表达变化。",
+      "source_anchor": "Sections 2.9, 4.9 and Figure 9",
+      "conditions": {
+        "crop": "Camellia sinensis cv. Tieguanyin",
+        "setting": "artificial chamber / PEG treatments",
+        "measured_endpoint": "gene-expression profiles",
+        "treatment_note": "Methods/figure show separate heat and drought treatments; do not infer demonstrated simultaneous field interaction"
+      },
+      "supports": [
+        "Heat/drought responses warrant cultivar, condition, timing and endpoint metadata"
+      ],
+      "does_not_support": [
+        "35C is a universal tea damage threshold",
+        "40C chamber exposure is a field operational trigger",
+        "Yield loss estimates",
+        "Irrigation dose or combined-stress synergy"
+      ],
+      "recommended_software_behavior": "Show cultivar/setting mismatch; retain original engineering threshold label.",
+      "action_evidence_class": "SOURCE_SCOPE_CHECK_NOT_FIELD_PRESCRIPTION",
+      "applicability_default": "CONTROLLED_SETTING_ONLY",
+      "status": "RUNTIME_SCOPE_MATCHING_NO_EFFECTIVENESS_CLAIM",
+      "effectiveness_measured_in_teaguard": false,
+      "origin_status": "RESEARCH_CARD_DESIGN_NOT_PRODUCT_LOADED"
+    },
+    {
+      "card_id": "E03",
+      "source_ids": [
+        "ZL-RHIZO"
+      ],
+      "claim_type": "CROSS_SPECIES_MECHANISM_ANALOGY",
+      "short_claim": "油菜-Ensifer C5-水凝胶体系中的环境与根部过程共同影响其研究终点。",
+      "source_anchor": "Abstract, root colonization/suberin/auxin results, author affiliations",
+      "conditions": {
+        "crop": "Brassica napus",
+        "setting": "specific PMH / Ensifer C5 / acidic-soil experimental system",
+        "measured_endpoint": "reported plant and root responses in original study"
+      },
+      "supports": [
+        "Ask which organism/medium/treatment an agricultural mechanism applies to"
+      ],
+      "does_not_support": [
+        "Tea yield gain",
+        "Use hydrogel or bacteria in a tea garden",
+        "Treatment dose",
+        "Tea soil-moisture diagnosis"
+      ],
+      "recommended_software_behavior": "Return MISMATCH for direct tea treatment recommendation; permit labelled mechanism background.",
+      "action_evidence_class": "ANALOGY_ONLY_NO_TREATMENT",
+      "applicability_default": "MISMATCH_FOR_DIRECT_TEA_INTERVENTION",
+      "status": "RUNTIME_SCOPE_MATCHING_NO_EFFECTIVENESS_CLAIM",
+      "effectiveness_measured_in_teaguard": false,
+      "origin_status": "RESEARCH_CARD_DESIGN_NOT_PRODUCT_LOADED"
+    },
+    {
+      "card_id": "E04",
+      "source_ids": [
+        "ZL-SPECCLIP",
+        "ZL-FALCON"
+      ],
+      "claim_type": "METHOD_DESIGN_ANALOGY",
+      "short_claim": "保留观测的空间层次和模态特有信息，再处理一致性或冲突。",
+      "source_anchor": "Falcon task granularity; SpecCLIP Introduction/method auxiliary decoders",
+      "conditions": {
+        "crop": "none",
+        "setting": "remote sensing and stellar spectroscopy; method analogy only",
+        "measured_endpoint": "original tasks, not TeaGuard"
+      },
+      "supports": [
+        "Separate weather grid, local notes and source metadata",
+        "Record conflicts without averaging incompatible scales"
+      ],
+      "does_not_support": [
+        "Agricultural multimodal model accuracy",
+        "A measured soil condition",
+        "Automatic image-based diagnosis"
+      ],
+      "recommended_software_behavior": "Check time/location/method when grid balance conflicts with soil feedback.",
+      "action_evidence_class": "PROJECT_ENGINEERING_HEURISTIC",
+      "applicability_default": "DATA_REPRESENTATION_ONLY",
+      "status": "RUNTIME_SCOPE_MATCHING_NO_EFFECTIVENESS_CLAIM",
+      "effectiveness_measured_in_teaguard": false,
+      "origin_status": "RESEARCH_CARD_DESIGN_NOT_PRODUCT_LOADED"
+    },
+    {
+      "card_id": "E05",
+      "source_ids": [
+        "PRIOR-GEORAG",
+        "EXT-PEACE",
+        "ZL-QA",
+        "ZL-COT"
+      ],
+      "claim_type": "SOURCE_GROUNDED_ENGINEERING",
+      "short_claim": "结构化输入、来源绑定与回答生成可分开设计。合成答案不能替代科学观测。",
+      "source_anchor": "Prior GeoGPT-RAG memo; PEACE Section 4.1; official QA dataset descriptions",
+      "conditions": {
+        "crop": "none",
+        "setting": "literature/structured-information workflow",
+        "measured_endpoint": "original QA tasks, not agricultural outcomes"
+      },
+      "supports": [
+        "Task-to-input and task-to-evidence references",
+        "Source-scope checking before explanation"
+      ],
+      "does_not_support": [
+        "Experts validated all generated QA",
+        "Scientific truth from AI self-consistency",
+        "Real-user benefit"
+      ],
+      "recommended_software_behavior": "Withhold unsupported scientific claims; numeric/date conflicts fall back to deterministic template.",
+      "action_evidence_class": "PROJECT_ENGINEERING_HEURISTIC",
+      "applicability_default": "WORKFLOW_ONLY",
+      "status": "RUNTIME_SCOPE_MATCHING_NO_EFFECTIVENESS_CLAIM",
+      "effectiveness_measured_in_teaguard": false,
+      "origin_status": "RESEARCH_CARD_DESIGN_NOT_PRODUCT_LOADED"
+    }
+  ],
+  "origin_status": "DESIGN_ONLY_NOT_IMPLEMENTED",
+  "source_document_sha256": "c84d9f1948783e0d21f6bb50e8f7c83555196b5b7e5ae1b98de3dc2cf1ba78c5"
+}

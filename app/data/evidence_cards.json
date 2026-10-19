@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "knowledge_mode": "CURRENT_REFERENCE_FOR_RETROSPECTIVE_SIMULATION",
+  "sources": [
+    {
+      "id": "FAO56_CH1",
+      "title": "FAO Irrigation and Drainage Paper 56, Chapter 1",
+      "url": "https://www.fao.org/4/x0490e/x0490e04.htm",
+      "local_file": "references/fao56_chapter1_fetch.json",
+      "sha256": "f581f4727e962d637652cef59362880927afc02ba2892aa1ece09602bc5f561e",
+      "read_scope": "Chapter1 sections Reference crop evapotranspiration and Crop factors; partial chapter read",
+      "publication_year": 1998
+    }
+  ],
+  "cards": [
+    {
+      "id": "ET0_REFERENCE",
+      "source_id": "FAO56_CH1",
+      "locator": "Chapter 1 / Evapotranspiration concepts / Reference crop evapotranspiration",
+      "claim_ids": [
+        "REFERENCE_ET0_NOT_FIELD_SOIL_WATER"
+      ],
+      "crop": [
+        "*"
+      ],
+      "regions": [
+        "*"
+      ],
+      "scope": "GENERAL_DEFINITION",
+      "summary_zh": "ET₀对应不缺水的假想参考草地，反映气象蒸发需求；它不包含具体作物和土壤状态。",
+      "does_not_support": [
+        "IRRIGATION_DOSE",
+        "TEA_PLOT_SOIL_MOISTURE",
+        "UNIVERSAL_TEA_DAMAGE_THRESHOLD"
+      ],
+      "provenance": "PRIMARY_SOURCE_READ_CURRENT_REFERENCE_NOT_HISTORICAL_RELEASE_PROOF"
+    },
+    {
+      "id": "CROP_CONTEXT",
+      "source_id": "FAO56_CH1",
+      "locator": "Chapter 1 / Factors affecting evapotranspiration / Crop factors; Management and environmental conditions",
+      "claim_ids": [
+        "CROP_AND_SOIL_CONTEXT_REQUIRED"
+      ],
+      "crop": [
+        "*"
+      ],
+      "regions": [
+        "*"
+      ],
+      "scope": "GENERAL_CONTEXT",
+      "summary_zh": "作物类型、品种、生长阶段、土壤水分和管理条件会影响实际蒸散，参考气象量不能替代这些现场条件。",
+      "does_not_support": [
+        "IRRIGATION_DOSE",
+        "LOCAL_TEA_KC_VALUE",
+        "LOCAL_TEA_THRESHOLD"
+      ],
+      "provenance": "PRIMARY_SOURCE_READ_CURRENT_REFERENCE_NOT_HISTORICAL_RELEASE_PROOF"
+    }
+  ]
+}

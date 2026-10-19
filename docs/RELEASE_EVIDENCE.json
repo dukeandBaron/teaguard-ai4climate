@@ -1,0 +1,28 @@
+{
+  "version": "0.3.1",
+  "engine_sha256": "2851f2fab5be1363481b47f956d39889e7b1380f76a9acd1fec3e7810478d577",
+  "full_workspace_python_tests": 105,
+  "public_runtime_python_tests": 48,
+  "frontend_tests": 3,
+  "browser_checks": 48,
+  "logical_cases": 10,
+  "input_variants": 13,
+  "behavior_checks": 40,
+  "video": {
+    "file": "TeaGuard_Demo_V3_1.mp4",
+    "sha256": "21b072cd7bc869cdd046ac99ab3de774afde20794075e6319ddbce3a1a2a58dc",
+    "bytes": 3884318,
+    "duration_seconds": 174,
+    "real_browser_recording": true,
+    "audio": false
+  },
+  "statement": {
+    "file": "TeaGuard_Project_Statement_V3_1.pdf",
+    "sha256": "342f911c3b1cb838e3937a2ee896abf8abffd19dc8f5b8573a16fc7e2e7d037e",
+    "bytes": 362613,
+    "pages": 4
+  },
+  "new_model_training": false,
+  "field_effectiveness_verified": false,
+  "official_submission_verified": false
+}

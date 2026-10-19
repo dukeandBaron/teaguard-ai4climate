@@ -1,0 +1,11 @@
+case_id,variants,passed,assertions
+N01,1,True,4
+N02,1,True,4
+N03,1,True,4
+N04,2,True,4
+N05,3,True,4
+N06,1,True,4
+N07,1,True,4
+N08,1,True,4
+N09,1,True,4
+N10,1,True,4

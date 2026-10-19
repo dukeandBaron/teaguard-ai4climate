@@ -1,0 +1,67 @@
+{
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=29.951%2C29.951%2C29.951%2C30.201%2C30.201%2C30.201%2C30.451%2C30.451%2C30.451&longitude=119.853%2C120.103%2C120.353%2C119.853%2C120.103%2C120.353%2C119.853%2C120.103%2C120.353&start_date=2015-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cet0_fao_evapotranspiration%2Cshortwave_radiation_sum%2Cwind_speed_10m_max&timezone=Asia%2FShanghai&models=era5",
+  "requested_points": [
+    [
+      29.951,
+      119.853
+    ],
+    [
+      29.951,
+      120.103
+    ],
+    [
+      29.951,
+      120.353
+    ],
+    [
+      30.201,
+      119.853
+    ],
+    [
+      30.201,
+      120.103
+    ],
+    [
+      30.201,
+      120.353
+    ],
+    [
+      30.451,
+      119.853
+    ],
+    [
+      30.451,
+      120.103
+    ],
+    [
+      30.451,
+      120.353
+    ]
+  ],
+  "requested_models": "era5",
+  "read_only": true,
+  "training": false,
+  "data_kind": "PUBLIC_REANALYSIS_SPATIAL_REFERENCE_NOT_FIELD_MEASUREMENT",
+  "checked_utc": "2026-10-19T02:35:49.330152+00:00",
+  "http_status": 200,
+  "request_mode": "ONE_PUBLIC_GET",
+  "status": "PASS_PUBLIC_SPATIAL_REFERENCE",
+  "grid_responses": 9,
+  "unique_returned_grids": 9,
+  "days_per_grid": 4018,
+  "grid_day_rows": 36162,
+  "variables": [
+    "temperature_2m_max",
+    "temperature_2m_min",
+    "precipitation_sum",
+    "et0_fao_evapotranspiration",
+    "shortwave_radiation_sum",
+    "wind_speed_10m_max"
+  ],
+  "raw_sha256": "d9f673fac79d035de69a3f3ab9749364c2a51da88bed594ae153cd4f5ab176f1",
+  "csv_sha256": "9948befee7fff00688b969b57573e79bc7be3049720b91a561b9b26f86981a67",
+  "center_rows_differing_from_v1": 0,
+  "real_field_labels": 0,
+  "license": "Weather data by Open-Meteo.com; ERA5 by Copernicus/ECMWF; CC BY4.0",
+  "limit": "Neighboring grids and consecutive dates are correlated; not independent plots or ground truth. Provider point elevation adjustments retained. V1 data and predictions were not replaced."
+}

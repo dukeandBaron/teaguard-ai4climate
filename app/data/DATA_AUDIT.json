@@ -1,0 +1,86 @@
+{
+  "status": "PASS_DESCRIPTIVE_DATA_COVERAGE",
+  "center_rows": 4018,
+  "center_years": 11,
+  "regional_grids": 9,
+  "grid_day_rows": 36162,
+  "real_plot_soil_damage_yield_labels": 0,
+  "independent_provider_families": 1,
+  "daily_max_pearson_with_center": {
+    "0": 0.9979357424901528,
+    "1": 0.9986231179917803,
+    "2": 0.998090871178725,
+    "3": 0.998892093323649,
+    "4": 1.0,
+    "5": 0.9992818719459591,
+    "6": 0.9970786491098886,
+    "7": 0.9983574068672284,
+    "8": 0.9979970116540143
+  },
+  "yearly_center_summary": {
+    "2015": {
+      "days": 365,
+      "mean_daily_max_c": 20.805479452054794,
+      "grid_days_ge35c": 10
+    },
+    "2016": {
+      "days": 366,
+      "mean_daily_max_c": 21.64672131147541,
+      "grid_days_ge35c": 33
+    },
+    "2017": {
+      "days": 365,
+      "mean_daily_max_c": 21.83013698630137,
+      "grid_days_ge35c": 35
+    },
+    "2018": {
+      "days": 365,
+      "mean_daily_max_c": 21.651780821917807,
+      "grid_days_ge35c": 21
+    },
+    "2019": {
+      "days": 365,
+      "mean_daily_max_c": 21.393698630136985,
+      "grid_days_ge35c": 16
+    },
+    "2020": {
+      "days": 366,
+      "mean_daily_max_c": 21.735245901639345,
+      "grid_days_ge35c": 26
+    },
+    "2021": {
+      "days": 365,
+      "mean_daily_max_c": 22.523835616438355,
+      "grid_days_ge35c": 14
+    },
+    "2022": {
+      "days": 365,
+      "mean_daily_max_c": 21.993150684931507,
+      "grid_days_ge35c": 45
+    },
+    "2023": {
+      "days": 365,
+      "mean_daily_max_c": 22.484109589041097,
+      "grid_days_ge35c": 20
+    },
+    "2024": {
+      "days": 366,
+      "mean_daily_max_c": 22.860928961748634,
+      "grid_days_ge35c": 58
+    },
+    "2025": {
+      "days": 365,
+      "mean_daily_max_c": 23.893150684931506,
+      "grid_days_ge35c": 48
+    }
+  },
+  "weather_csv_sha256": "47a8bc71d1301c972520c170ccbd9fbc932c07b035578a5207e8ffac6b25f38e",
+  "meaning": "Descriptive counts only. Spatial and temporal dependence is not corrected into a fictional effective independent sample size. No field diagnosis labels or operational forecast availability proof were added.",
+  "recommendations": [
+    "More regional grids add context, not measured plots",
+    "For real weather prediction compare same-origin archived forecasts and simple correction first",
+    "For agricultural damage models obtain corresponding cultivar/stage/soil/outcome labels; AI cases cannot replace them",
+    "Keep2025 as already-inspected diagnostics for new designs"
+  ],
+  "training": false
+}
